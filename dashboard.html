@@ -1,1 +1,44 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BotLogix™ Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <h1>BotLogix™ Dashboard</h1>
+  <section id="lifebits">
+    <h2>Lifebits™</h2>
+    <ul id="lifebits-list"></ul>
+  </section>
+  <section id="bibbot-controls">
+    <h2>BibBot Deployment</h2>
+    <button id="deploy-btn">Deploy BibBot</button>
+    <div id="bibbot-status">Status: Idle</div>
+  </section>
+  <section id="huddle-room">
+    <h2>Huddle Room</h2>
+    <input type="text" id="team-name" placeholder="Enter Team Name">
+    <button id="huddle-btn">Launch Huddle Room</button>
+    <div id="huddle-status">Ready</div>
+    <div id="huddle-modal">
+      <div id="huddle-content">
+        <h3>Huddle Room</h3>
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
+  </section>
+  <section id="market-sync">
+    <h2>Market Sync Pulse™</h2>
+    <canvas id="market-chart"></canvas>
+  </section>
+  <section id="truth-index">
+    <h2>TruthIndex™</h2>
+    <div id="truth-score">Score: Calculating...</div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
